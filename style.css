@@ -1,0 +1,336 @@
+/* Κεντρικό Layout */
+.main-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* 2 μέρη για την αριστερή στήλη, 1 για τη δεξιά */
+    gap: 20px; /* Απόσταση μεταξύ στηλών */
+    width: 90%; /* Μικρή μείωση του πλάτους για να φαίνεται καλύτερα */
+    max-width: 1200px;
+    margin: 0 auto; /* Κεντράρισμα */
+}
+
+/* Αριστερή Στήλη */
+.left-column {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+/* Δεξιά Στήλη */
+.right-column {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    color: #333;
+}
+
+.right-column h2 {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.right-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.right-column ul li {
+    margin-bottom: 15px;
+}
+
+.right-column ul li a {
+    color: #2196F3;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.right-column ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Σχεδίαση */
+@media (max-width: 768px) {
+    .main-layout {
+        grid-template-columns: 1fr; /* Εμφάνιση των στηλών τη μία κάτω από την άλλη */
+    }
+    .left-column, .right-column {
+        padding: 20px;
+    }
+}
+
+/* Γενικές Ρυθμίσεις */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #2196F3, #21CBF3);
+    overflow: hidden; /* Κρύβει οτιδήποτε ξεφεύγει από τα όρια */
+    position: relative; /* Απαραίτητο για τα αστέρια */
+}
+
+/* Κεντρικό Πλαίσιο */
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px 60px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    color: #333333;
+    z-index: 1; /* Διασφαλίζει ότι το πλαίσιο είναι πάνω από τα αστέρια */
+}
+
+.star {
+    position: absolute;
+    background-image: url('photos/python.png'); /* Χρησιμοποίησε τη διαδρομή της εικόνας σου */
+    background-size: cover;
+    width: 30px; /* Προσαρμόζεις το μέγεθος */
+    height: 30px;
+    animation: float 6s ease-in-out infinite;
+    z-index: 10;
+}
+
+/* Ρυθμίσεις για κάθε αστέρι */
+.star:nth-child(1) {
+    width: 25px;
+    height: 25px;
+    top: 10%;
+    left: 20%;
+    animation-duration: 6s;
+}
+
+.star:nth-child(2) {
+    width: 20px;
+    height: 20px;
+    top: 30%;
+    right: 40%;
+    animation-duration: 8s;
+}
+
+.star:nth-child(3) {
+    width: 30px;
+    height: 30px;
+    top: 70%;
+    right: 15%;
+    animation-duration: 15s;
+}
+
+/* Νέα αστέρια στα δεξιά */
+.star:nth-child(4) {
+    width: 35px;
+    height: 35px;
+    top: 50%;
+    left: 10%; /* Πιο δεξιά */
+    animation-duration: 7s;
+}
+
+.star:nth-child(5) {
+    width: 30px;
+    height: 30px;
+    top: 40%;
+    left: 90%;
+    animation-duration: 9s;
+}
+
+.star:nth-child(6) {
+    width: 40px;
+    height: 40px;
+    top: 90%;
+    left: 40%;
+    animation-duration: 6s;
+}
+
+.star:nth-child(7) {
+    width: 25px;
+    height: 25px;
+    top: 10%;
+    left: 80%;
+    animation-duration: 8s;
+}
+
+.star:nth-child(8) {
+    width: 50px;
+    height: 50px;
+    top: 80%;
+    left: 70%;
+    animation-duration: 10s;
+}
+
+/* Animation για την κίνηση */
+@keyframes float {
+    0% {
+    transform: translateY(0);
+    }
+    50% {
+    transform: translateY(-15px);
+    }
+    100% {
+    transform: translateY(0);
+}
+}
+
+/* Επικεφαλίδες */
+h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+/* Πλαίσιο εικόνων */
+.images-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.grade-item {
+    text-align: center;
+}
+
+.grade-icon {
+    width: 110px;
+    height: 110px;
+    object-fit: contain;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.grade-icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Πλαίσιο κουμπιών */
+.grade-selection {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.module-icon {
+    width: 110px;
+    height: 110px;
+    object-fit: contain;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.module-icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Πλαίσιο κουμπιών */
+.module-selection {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+/* Κουμπιά */
+button {
+    width: 200px; /* Σταθερό πλάτος */
+    height: 50px; /* Σταθερό ύψος */
+    padding: 0;
+    font-size: 1.1rem;
+    text-align: center;
+    line-height: 50px; /* Κεντράρισμα κειμένου κάθετα */
+    border: none;
+    background: linear-gradient(135deg, #4CAF50, #2196F3);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #4CAF50;
+    transform: scale(1.1);
+}
+
+button:active {
+    transform: scale(1.05);
+}
+
+.back-button-container {
+    position: absolute; /* Σταθερό σημείο στη σελίδα */
+    top: 20px;
+    left: 20px;
+    z-index: 2000; /* Πάνω από το περιεχόμενο */
+}
+
+.back-arrow-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px; /* Μέγεθος πλαισίου */
+    height: 70px;
+    background: linear-gradient(135deg, #4CAF50, #2196F3); /* Χρώματα πλαισίου */
+    border-radius: 15px; /* Καμπύλες γωνίες */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Σκιά */
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    cursor: pointer; /* Δείκτης χεριού */
+}
+
+.back-arrow-box:hover {
+    transform: scale(1.1); /* Ελαφρώς μεγαλύτερο στο hover */
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3); /* Εντυπωσιακή σκιά */
+}
+
+.back-arrow-box:active {
+    transform: scale(1.05); /* Μικρότερο κατά το click */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Μείωση σκιάς */
+}
+
+.back-arrow {
+    width: 40px; /* Μέγεθος εικόνας */
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    /* Ρυθμίσεις για τα κουμπιά */
+    button {
+        width: 80%; /* Το πλάτος είναι σχετικό με το container */
+        max-width: 200px; /* Μέγιστο πλάτος για αποφυγή υπερβολών */
+        height: auto; /* Αυτόματη προσαρμογή ύψους */
+        padding: 15px 15px; /* Εξασφάλιση καλής αναλογίας */
+        font-size: 0.9rem; /* Ελαφρώς μικρότερο κείμενο */
+        line-height: normal; /* Αυτόματη διαχείριση */
+    }
+
+    /* Ρυθμίσεις για το main layout */
+    .main-layout {
+        padding: 10px; /* Αποφυγή κόλλησης στα άκρα */
+    }
+
+    /* Ρυθμίσεις για τα containers */
+    .left-column, .right-column {
+        padding: 15px; /* Εσωτερικά περιθώρια */
+        margin: 10px 0; /* Εξωτερικά περιθώρια για απόσταση από τις άκρες */
+    }
+
+    /* Ρύθμιση για εικόνες */
+    .grade-icon {
+        max-width: 80%; /* Περιορισμός μεγέθους */
+        height: auto; /* Προσαρμογή ύψους */
+    }
+
+    /* Ρύθμιση για το σώμα (προαιρετικά αν υπάρχει γενικό πρόβλημα) */
+    body {
+        padding: 10px; /* Αποφυγή κόλλησης περιεχομένου */
+    }
+}

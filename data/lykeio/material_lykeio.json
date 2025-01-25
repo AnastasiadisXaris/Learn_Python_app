@@ -1,0 +1,54 @@
+{
+  "materials": [
+    {
+      "title": "Μάθημα 1",
+      "description": "Δομημένος Προγραμματισμός",
+      "image": "../../photos/teacher.png",
+      "resources": {
+        "pdf": "https://example.com/lesson1.pdf",
+        "video": "https://example.com/lesson1.mp4",
+        "interactive": "https://example.com/lesson1.html"
+      }
+    },
+    {
+      "title": "Μάθημα 2",
+      "description": "Δομές Δεδομένων και Αλγόριθμοι",
+      "image": "../../photos/teacher.png",
+      "resources": {
+        "pdf": "https://example.com/lesson1.pdf",
+        "video": "https://example.com/lesson1.mp4",
+        "interactive": "https://example.com/lesson1.html"
+      }
+    },
+    {
+      "title": "Μάθημα 3",
+      "description": "Αρχές Οπτικού Προγραμματισμού",
+      "image": "../../photos/teacher.png",
+      "resources": {
+        "pdf": "https://example.com/lesson1.pdf",
+        "video": "https://example.com/lesson1.mp4",
+        "interactive": "https://example.com/lesson1.html"
+      }
+    },
+    {
+      "title": "Μάθημα 4",
+      "description": "Αρχεία και Δεδομένα",
+      "image": "../../photos/teacher.png",
+      "resources": {
+        "pdf": "https://example.com/lesson1.pdf",
+        "video": "https://example.com/lesson1.mp4",
+        "interactive": "https://example.com/lesson1.html"
+      }
+    },
+    {
+      "title": "Μάθημα 5",
+      "description": "Εργασία σε Ομάδες και Έργα",
+      "image": "../../photos/teacher.png",
+      "resources": {
+        "pdf": "https://example.com/lesson1.pdf",
+        "video": "https://example.com/lesson1.mp4",
+        "interactive": "https://example.com/lesson1.html"
+      }
+    }
+  ]
+}

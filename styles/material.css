@@ -1,0 +1,172 @@
+/* Βασικές Ρυθμίσεις */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #2196F3, #21CBF3);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  padding: 20px;
+  max-width: 1050px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Εφέ Εμφάνισης */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Στοιχεία Υλικού */
+.material-item {
+  margin: 20px 0;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  background-color: #f9fcff;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.material-item:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.material-item img {
+  width: 120px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.material-item h3 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #0056b3;
+}
+
+.material-item p {
+  margin: 10px 0 0 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+button.more-button {
+  padding: 12px 18px;
+  background: linear-gradient(135deg, #4CAF50, #2196F3);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.4s ease, transform 0.2s ease;
+}
+
+button.more-button:hover {
+  background: linear-gradient(135deg, #1e88e5, #43a047);
+  transform: translateY(-3px);
+}
+
+/* Λίστα Dropdown */
+.dropdown {
+  list-style: none;
+  margin: 15px 0 0;
+  padding: 0;
+  display: none;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dropdown li {
+  margin: 5px 10px;
+  padding: 5px;
+}
+
+.dropdown li a {
+  text-decoration: none;
+  color: #0056b3;
+  padding: 8px 12px;
+  border-radius: 5px;
+  display: block;
+  background: linear-gradient(135deg, #f0f8ff, #e6f7ff);
+  transition: background 0.3s ease;
+}
+
+.dropdown li a:hover {
+  background: linear-gradient(135deg, #d2e8ff, #c5efff);
+}
+
+/* Πίσω Βέλος */
+.back-arrow-box {
+  width: 50px;
+  height: 50px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #4CAF50, #2196F3);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.back-arrow-box:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.back-arrow {
+  width: 30px;
+  height: auto;
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+      padding: 15px;
+  }
+
+  .material-item {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .material-item img {
+      margin-bottom: 15px;
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "materials": [
+    {
+      "title": "Μάθημα 1",
+      "description": "Εισαγωγή στην Python",
+      "image": "../../photos/private-lesson.png",
+      "resources": {
+        "pdf": "https://drive.google.com/file/d/1c6ubwMvqfOTvmTigVxXFh6ahnavEAYDs/view?usp=sharing",
+        "video": "https://example.com/lesson1.mp4",
+        "interactive": "https://example.com/lesson1.html"
+      }
+    },
+    {
+      "title": "Μάθημα 2",
+      "description": "Βασικές Έννοιες Προγραμματισμού",
+      "image": "../../photos/private-lesson.png",
+      "resources": {
+        "pdf": "https://example.com/lesson1.pdf",
+        "video": "https://example.com/lesson1.mp4",
+        "interactive": "https://example.com/lesson1.html"
+      }
+    },
+    {
+      "title": "Μάθημα 3",
+      "description": "Απλές Δομές Ελέγχου",
+      "image": "../../photos/private-lesson.png",
+      "resources": {
+        "pdf": "https://example.com/lesson1.pdf",
+        "video": "https://example.com/lesson1.mp4",
+        "interactive": "https://example.com/lesson1.html"
+      }
+    },
+    {
+      "title": "Μάθημα 4",
+      "description": "Βασικές Συναρτήσεις και Αριθμητικές Πράξεις",
+      "image": "../../photos/private-lesson.png",
+      "resources": {
+        "pdf": "https://example.com/lesson1.pdf",
+        "video": "https://example.com/lesson1.mp4",
+        "interactive": "https://example.com/lesson1.html"
+      }
+    },
+    {
+      "title": "Μάθημα 5",
+      "description": "Παιχνίδια και Διαδραστικά Σενάρια",
+      "image": "../../photos/private-lesson.png",
+      "resources": {
+        "pdf": "https://example.com/lesson1.pdf",
+        "video": "https://example.com/lesson1.mp4",
+        "interactive": "https://example.com/lesson1.html"
+      }
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "materials": [
+    {
+      "title": "Μάθημα 1",
+      "description": "Αντικειμενοστραφής Προγραμματισμός (OOP)",
+      "image": "../../photos/education.png",
+      "resources": {
+        "pdf": "https://example.com/lesson1.pdf",
+        "video": "https://example.com/lesson1.mp4",
+        "interactive": "https://example.com/lesson1.html"
+      }
+    },
+    {
+      "title": "Μάθημα 2",
+      "description": "Εφαρμογή Βιβλιοθηκών Python",
+      "image": "../../photos/education.png",
+      "resources": {
+        "pdf": "https://example.com/lesson1.pdf",
+        "video": "https://example.com/lesson1.mp4",
+        "interactive": "https://example.com/lesson1.html"
+      }
+    },
+    {
+      "title": "Μάθημα 3",
+      "description": "Διαχείριση Δεδομένων",
+      "image": "../../photos/education.png",
+      "resources": {
+        "pdf": "https://example.com/lesson1.pdf",
+        "video": "https://example.com/lesson1.mp4",
+        "interactive": "https://example.com/lesson1.html"
+      }
+    },
+    {
+      "title": "Μάθημα 4",
+      "description": "Web Development με Python",
+      "image": "../../photos/education.png",
+      "resources": {
+        "pdf": "https://example.com/lesson1.pdf",
+        "video": "https://example.com/lesson1.mp4",
+        "interactive": "https://example.com/lesson1.html"
+      }
+    },
+    {
+      "title": "Μάθημα 5",
+      "description": "Εκπαιδευτικά Projects",
+      "image": "../../photos/education.png",
+      "resources": {
+        "pdf": "https://example.com/lesson1.pdf",
+        "video": "https://example.com/lesson1.mp4",
+        "interactive": "https://example.com/lesson1.html"
+      }
+    }
+  ]
+}

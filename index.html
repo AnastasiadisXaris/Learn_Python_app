@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Python Playground</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+  <div class="star"></div>
+
+  <div class="main-layout">
+    <!-- Αριστερή Στήλη -->
+    <div class="container left-column">
+      <h1>Python Playground</h1>
+      <h2><u>Επιλέξτε τη Βαθμίδα σας</u></h2>
+
+      <div class="images-container">
+        <div>
+          <img src="photos/gymnasio.png" class="grade-icon" alt="Γυμνάσιο">
+        </div>
+        <div>
+          <img src="photos/lykeio.png" class="grade-icon" alt="Λύκειο">
+        </div>
+        <div>
+          <img src="photos/panepistimio.png" class="grade-icon" alt="Πανεπιστήμιο">
+        </div>
+      </div>
+
+      <div class="grade-selection">
+        <button onclick="selectGrade('gymnasio')">Γυμνάσιο</button>
+        <button onclick="selectGrade('lykeio')">Λύκειο</button>
+        <button onclick="selectGrade('panepistimio')">Πανεπιστήμιο</button>
+      </div>
+    </div>
+
+    <!-- Δεξιά Στήλη -->
+    <div class="container right-column">
+      <h2><u>Χρήσιμοι Σύνδεσμοι</u></h2>
+      <ul>
+        <li><a href="https://python.org" target="_blank" rel="noopener noreferrer">Επίσημη Ιστοσελίδα Python</a></li>
+        <li><a href="https://www.w3schools.com" target="_blank" rel="noopener noreferrer">W3Schools</a></li>
+        <li><a href="https://stackoverflow.com" target="_blank" rel="noopener noreferrer">Stack Overflow</a></li>
+      </ul>
+
+      <h2><u>Πρόσθετο Υλικό</u></h2>
+      <p>Μπορείτε να βρείτε περισσότερα εργαλεία και παραδείγματα στον ακόλουθο σύνδεσμο:</p>
+      <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </div>
+  </div>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>

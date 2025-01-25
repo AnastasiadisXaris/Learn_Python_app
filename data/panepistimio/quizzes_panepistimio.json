@@ -1,0 +1,55 @@
+{
+    "quizzes": [
+      {
+        "title": "Μάθημα 1",
+        "description": "Εισαγωγή στην Python",
+        "image": "../../photos/quiz.png",
+        "resources": {
+          "Quiz_1": "https://example.com/lesson1.pdf",
+          "Quiz_2": "https://example.com/lesson1.mp4",
+          "Quiz_3": "https://example.com/lesson1.html"
+        }
+      },
+      {
+        "title": "Μάθημα 2",
+        "description": "Βασικές Έννοιες Προγραμματισμού",
+        "image": "../../photos/quiz.png",
+        "resources": {
+          "Quiz_1": "https://example.com/lesson1.pdf",
+          "Quiz_2": "https://example.com/lesson1.mp4",
+          "Quiz_3": "https://example.com/lesson1.html"
+        }
+      },
+      {
+        "title": "Μάθημα 3",
+        "description": "Απλές Δομές Ελέγχου",
+        "image": "../../photos/quiz.png",
+        "resources": {
+          "Quiz_1": "https://example.com/lesson1.pdf",
+          "Quiz_2": "https://example.com/lesson1.mp4",
+          "Quiz_3": "https://example.com/lesson1.html"
+        }
+      },
+      {
+        "title": "Μάθημα 4",
+        "description": "Βασικές Συναρτήσεις και Αριθμητικές Πράξεις",
+        "image": "../../photos/quiz.png",
+        "resources": {
+          "Quiz_1": "https://example.com/lesson1.pdf",
+          "Quiz_2": "https://example.com/lesson1.mp4",
+          "Quiz_3": "https://example.com/lesson1.html"
+        }
+      },
+      {
+        "title": "Μάθημα 5",
+        "description": "Παιχνίδια και Διαδραστικά Σενάρια",
+        "image": "../../photos/quiz.png",
+        "resources": {
+          "Quiz_1": "https://example.com/lesson1.pdf",
+          "Quiz_2": "https://example.com/lesson1.mp4",
+          "Quiz_3": "https://example.com/lesson1.html"
+        }
+      }
+    ]
+  }
+  
