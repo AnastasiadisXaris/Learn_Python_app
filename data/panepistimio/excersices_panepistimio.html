@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Περιβάλλον Εξάσκησης</title>
+    <link rel="stylesheet" href="../../styles/exercises.css">
+</head>
+<body>
+    <div class="container">
+    <div class="back-button-container">
+        <div class="back-arrow-box">
+        <img src="../../photos/left-arrow.png" alt="Back" class="back-arrow" onclick="goBack()">
+        </div>
+    </div>
+
+    <div class="container">
+    <h1>Καλωσήρθατε στο Περιβάλλον Εξάσκησης</h1>
+    <button id="start-button" class="run-button">Ξεκινήστε την Εξάσκηση</button>
+
+    <!-- Modal -->
+    <div id="interactive-modal" class="modal">
+        <div class="modal-content">
+        <span id="close-modal" class="close-button">&times;</span>
+        <h2>Περιβάλλον Εξάσκησης</h2>
+        <div id="exercise-selector-container">
+            <select id="exercise-selector">
+            <option value=""selected>Επιλέξτε άσκηση</option>
+            </select>
+        </div>
+        <p id="exercise-desc"></p>
+        <textarea id="editor" class="code-editor" placeholder="Γράψε τον κώδικά σου εδώ..."></textarea>
+        <button id="run-btn" class="run-button">Εκτέλεση</button>
+        <div id="output" class="output-container">
+            <p>Output will appear here</p>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/pyodide/v0.23.2/full/pyodide.js"></script>
+    <script src="../panepistimio/exersices_panepistimio.js"></script>
+</body>
+</html>

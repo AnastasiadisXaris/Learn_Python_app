@@ -136,3 +136,4 @@ if (runButton) {
 }
 
 loadPyodideAndRun();
+
