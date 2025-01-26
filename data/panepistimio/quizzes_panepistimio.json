@@ -5,7 +5,7 @@
         "description": "Εισαγωγή στην Python",
         "image": "../../photos/quiz.png",
         "resources": {
-          "Quiz_1": "https://example.com/lesson1.pdf",
+          "Quiz_1": "../panepistimio/quiz_1/quiz_1.html",
           "Quiz_2": "https://example.com/lesson1.mp4",
           "Quiz_3": "https://example.com/lesson1.html"
         }
