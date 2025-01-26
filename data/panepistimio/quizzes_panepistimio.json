@@ -6,7 +6,7 @@
         "image": "../../photos/quiz.png",
         "resources": {
           "Quiz_1": "../panepistimio/quiz_1/quiz_1.html",
-          "Quiz_2": "https://example.com/lesson1.mp4",
+          "Quiz_2": "../panepistimio/quiz_2/quiz_2.html",
           "Quiz_3": "https://example.com/lesson1.html"
         }
       },

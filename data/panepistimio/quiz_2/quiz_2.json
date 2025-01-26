@@ -1,0 +1,160 @@
+{
+    "quiz_2": [
+      {
+        "title": "Quiz 2",
+        "questions": [
+          {
+            "question": "Ποιος είναι ο σωστός τρόπος για να βρείτε το μέγιστο αριθμό από μία λίστα στην Python;",
+            "options": [
+              "max(my_list)",
+              "my_list.max()",
+              "maximum(my_list)",
+              "my_list.maximum()"
+            ],
+            "correctAnswer": "max(my_list)"
+          },
+          {
+            "question": "Ποια συνάρτηση επιστρέφει την ακέραια τιμή ενός αριθμού στην Python;",
+            "options": [
+              "int()",
+              "float()",
+              "round()",
+              "integer()"
+            ],
+            "correctAnswer": "int()"
+          },
+          {
+            "question": "Πώς διασφαλίζετε ότι ένας βρόχος while θα τερματιστεί στην Python;",
+            "options": [
+              "Προσθέτοντας μία συνθήκη εξόδου.",
+              "Χρησιμοποιώντας τη λέξη-κλειδί `stop`.",
+              "Χρησιμοποιώντας τη λέξη-κλειδί `halt`.",
+              "Δεν μπορεί να τερματιστεί."
+            ],
+            "correctAnswer": "Προσθέτοντας μία συνθήκη εξόδου."
+          },
+          {
+            "question": "Ποιος είναι ο σωστός τρόπος για να μετατρέψετε μια λίστα σε tuple;",
+            "options": [
+              "tuple(my_list)",
+              "my_list.to_tuple()",
+              "list.toTuple()",
+              "convert_tuple(my_list)"
+            ],
+            "correctAnswer": "tuple(my_list)"
+          },
+          {
+            "question": "Ποια εντολή χρησιμοποιείται για την εισαγωγή μιας βιβλιοθήκης στην Python;",
+            "options": [
+              "import library_name",
+              "include library_name",
+              "use library_name",
+              "require library_name"
+            ],
+            "correctAnswer": "import library_name"
+          },
+          {
+            "question": "Πώς ελέγχουμε αν ένα κλειδί υπάρχει σε ένα λεξικό;",
+            "options": [
+              "'key' in my_dict",
+              "my_dict.has_key('key')",
+              "my_dict['key']",
+              "my_dict.contains('key')"
+            ],
+            "correctAnswer": "'key' in my_dict"
+          },
+          {
+            "question": "Ποια είναι η εντολή για τη δημιουργία μιας συνάρτησης στην Python;",
+            "options": [
+              "def function_name():",
+              "create function_name():",
+              "function function_name():",
+              "make function_name():"
+            ],
+            "correctAnswer": "def function_name():"
+          },
+          {
+            "question": "Πώς υπολογίζουμε το άθροισμα όλων των στοιχείων μιας λίστας;",
+            "options": [
+              "sum(my_list)",
+              "add(my_list)",
+              "my_list.sum()",
+              "sum_list(my_list)"
+            ],
+            "correctAnswer": "sum(my_list)"
+          },
+          {
+            "question": "Ποια μέθοδος χρησιμοποιείται για να αφαιρέσουμε το πρώτο στοιχείο από μία λίστα;",
+            "options": [
+              "my_list.pop(0)",
+              "my_list.remove(0)",
+              "del my_list[0]",
+              "my_list.shift()"
+            ],
+            "correctAnswer": "my_list.pop(0)"
+          },
+          {
+            "question": "Ποιο είναι το αποτέλεσμα της πράξης `5 // 2` στην Python;",
+            "options": [
+              "2",
+              "2.5",
+              "3",
+              "0"
+            ],
+            "correctAnswer": "2"
+          },
+          {
+            "question": "Πώς δημιουργούμε μία λίστα που περιέχει τους αριθμούς από το 0 έως το 9;",
+            "options": [
+              "list(range(10))",
+              "range(10)",
+              "range(0, 10)",
+              "create_list(10)"
+            ],
+            "correctAnswer": "list(range(10))"
+          },
+          {
+            "question": "Ποια είναι η μέθοδος για την αφαίρεση των κενών από την αρχή και το τέλος ενός string;",
+            "options": [
+              "string.strip()",
+              "string.trim()",
+              "string.remove_spaces()",
+              "string.clean()"
+            ],
+            "correctAnswer": "string.strip()"
+          },
+          {
+            "question": "Ποια εντολή χρησιμοποιείται για να δημιουργήσουμε μία νέα κλάση στην Python;",
+            "options": [
+              "class ClassName:",
+              "create ClassName:",
+              "define ClassName:",
+              "make ClassName:"
+            ],
+            "correctAnswer": "class ClassName:"
+          },
+          {
+            "question": "Ποιο είναι το αποτέλεσμα της πράξης `10 % 3`;",
+            "options": [
+              "1",
+              "3",
+              "10",
+              "0"
+            ],
+            "correctAnswer": "1"
+          },
+          {
+            "question": "Πώς μπορούμε να δημιουργήσουμε ένα αντίγραφο μιας λίστας στην Python;",
+            "options": [
+              "my_list.copy()",
+              "copy(my_list)",
+              "list(my_list)",
+              "duplicate(my_list)"
+            ],
+            "correctAnswer": "my_list.copy()"
+          }
+        ]
+      }
+    ]
+  }
+  

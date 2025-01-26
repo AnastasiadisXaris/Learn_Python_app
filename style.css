@@ -334,3 +334,48 @@ button:active {
         padding: 10px; /* Αποφυγή κόλλησης περιεχομένου */
     }
 }
+
+/* Back Button Positioning */
+.back-button-container {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 100; /* Για να είναι πάνω από τα υπόλοιπα στοιχεία */
+  }
+  
+  .left-column {
+    position: relative; /* Απαραίτητο για το absolute positioning */
+  }
+  
+  /* Προσαρμογή για κινητά */
+  @media (max-width: 768px) {
+    .back-button-container {
+      top: 5px;
+      left: 5px;
+    }
+    
+    .back-button-container button {
+      padding: 8px 15px;
+      font-size: 0.9rem;
+    }
+  }
+
+  /* Προσθήκη στον υπάρχοντα κώδικα */
+body {
+    overflow-x: hidden; /* ΚΡΙΣΙΜΟ */
+  }
+  
+  .main-layout {
+    width: 100%;
+    box-sizing: border-box; /* Περιλαμβάνει padding στο πλάτος */
+  }
+  
+  @media (max-width: 768px) {
+    .grade-selection {
+      grid-template-columns: 1fr !important; /* 1 κουμπί ανά σειρά */
+    }
+  
+    .images-container {
+      flex-wrap: wrap; /* Αναδίπλωση εικόνων αν δεν χωράνε */
+    }
+  }
