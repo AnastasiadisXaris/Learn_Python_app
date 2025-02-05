@@ -8,6 +8,17 @@
   <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
+<!-- Navigation Menu -->
+<nav class="navbar">
+  <ul>
+    <li class="logo"><a href="#">Python Playground</a></li>
+    <li><button class="nav-button" onclick="selectGrade('gymnasio')">Γυμνάσιο</button></li>
+    <li><button class="nav-button" onclick="selectGrade('lykeio')">Λύκειο</button></li>
+    <li><button class="nav-button" onclick="selectGrade('panepistimio')">Πανεπιστήμιο</button></li>
+    <li><a class="nav-button highlight" href="https://xaris75.github.io/AnastasiadisDevSpace/" target="_blank" rel="noopener noreferrer">Πίσω στο Portfolio</a></li>
+
+  </ul>  
+</nav>
   <div class="star"></div>
   <div class="star"></div>
   <div class="star"></div>
@@ -20,24 +31,10 @@
   <div class="main-layout">
     <!-- Αριστερή Στήλη -->
     <div class="container left-column">
-      <!-- Προσθήκη Back Button Container -->
-      <div class="back-button-container">
-        <button onclick="selectGrade('')">Επιστροφή στο portofolio</button>
-      </div>
-      
       <h1>Python Playground</h1>
-      <h2><u>Επιλέξτε τη Βαθμίδα σας</u></h2>
-
-      <div class="images-container">
-        <!-- ... οι εικόνες παραμένουν ίδιες ... -->
-      </div>
-
-      <div class="grade-selection">
-        <!-- Αφαίρεση του κουμπιού Επιστροφή από εδώ -->
-        <button onclick="selectGrade('gymnasio')">Γυμνάσιο</button>
-        <button onclick="selectGrade('lykeio')">Λύκειο</button>
-        <button onclick="selectGrade('panepistimio')">Πανεπιστήμιο</button>
-      </div>
+      <p>Καλώς ήρθατε στο Python Playground! 🚀<br>
+        Εδώ μπορείτε να εξερευνήσετε τον κόσμο της Python, να μάθετε νέες τεχνικές και να αναπτύξετε τις δεξιότητές σας στον προγραμματισμό.
+        Επιλέξτε τη βαθμίδα σας από το μενού παραπάνω και ξεκινήστε το ταξίδι σας στην Python! 🐍</p>
     </div>
 
     <!-- Δεξιά Στήλη -->
