@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="el">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,45 +7,44 @@
   <link rel="stylesheet" href="../../style.css">
 </head>
 <body>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
+  <div class="star-container">
+    <div class="." style="top:10%; left:20%;"></div>
+    <div class="star" style="top:30%; left:50%;"></div>
+    <div class="star" style="top:50%; left:70%;"></div>
+    <div class="star" style="top:70%; left:10%;"></div>
+    <div class="star" style="top:80%; left:40%;"></div>
+    <div class="star" style="top:90%; left:60%;"></div>
+  </div>
+  
   <div class="container">
     <h1>Καλωσήρθατε στο Γυμνάσιο μας</h1>
-    <p><u><h3>Περιηγηθείτε στις ενότητες</h3></u></p>
-
-  <div class="container">
+    <h3><u>Περιηγηθείτε στις ενότητες</u></h3>
+  
     <div class="images-container">
       <div>
-        <img src="../../photos/book-stack.png"alt="book-stack" class="module-icon">
+        <img src="../../photos/book-stack.png" alt="book-stack" class="module-icon">
       </div>
       <div>
-        <img src="../../photos/quizzes.png"alt="quizzes" class="module-icon">
+        <img src="../../photos/quizzes.png" alt="quizzes" class="module-icon">
       </div>
       <div>
-        <img src="../../photos/programming.png"alt="programming"   class="module-icon">
+        <img src="../../photos/programming.png" alt="programming" class="module-icon">
       </div>
     </div>
-
+  
     <div class="button-container">
       <button onclick="navigateTo('material_gymnasio.html')">Εκπαιδευτικό Υλικό</button>
       <button onclick="navigateTo('quizzes_gymnasio.html')">Quizzes</button>
       <button onclick="navigateTo('exercises_gymnasio.html')">Περιβάλλον Εξάσκησης</button>
     </div>
   </div>
-
+  
   <div class="back-button-container">
-    <div class="back-arrow-box">
-      <img src="../../photos/left-arrow.png" alt="Back" class="back-arrow" onclick="goBack()">
+    <div class="back-arrow-box" onclick="goBack()">
+      <img src="../../photos/left-arrow.png" alt="Back" class="back-arrow">
     </div>
   </div>
 
-<script src="../../scripts/main.js"></script>
-
+  <script src="../../scripts/main.js"></script>
 </body>
 </html>

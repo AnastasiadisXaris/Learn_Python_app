@@ -1,56 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="el">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Python Playground</title>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <script defer src="scripts/main.js"></script>
 </head>
 <body>
-<!-- Navigation Menu -->
-<nav class="navbar">
-  <ul>
-    <li class="logo"><a href="#">Python Playground</a></li>
-    <li><button class="nav-button" onclick="selectGrade('gymnasio')">Γυμνάσιο</button></li>
-    <li><button class="nav-button" onclick="selectGrade('lykeio')">Λύκειο</button></li>
-    <li><button class="nav-button" onclick="selectGrade('panepistimio')">Πανεπιστήμιο</button></li>
-    <li><a class="nav-button highlight" href="https://xaris75.github.io/AnastasiadisDevSpace/" target="_blank" rel="noopener noreferrer">Πίσω στο Portfolio</a></li>
-  </ul>  
-</nav>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
-  <div class="star"></div>
+  <div class="star-container">
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+  </div>
 
+  <nav class="navbar">
+    <ul class="nav-links">
+      <li class="logo"><a href="#">Python Playground</a></li>
+      <li class="dropdown">
+        <button class="nav-button">Βαθμίδες Εκπαίδευσης ▼</button>
+        <div class="dropdown-content">
+          <a href="#" onclick="selectGrade('gymnasio')">Γυμνάσιο</a>
+          <a href="#" onclick="selectGrade('lykeio')">Λύκειο</a>
+          <a href="#" onclick="selectGrade('panepistimio')">Πανεπιστήμιο</a>
+        </div>
+      </li>
+      <li><a class="nav-button highlight" href="https://xaris75.github.io/Anastasiadis_portofolio/" target="_blank" rel="noopener noreferrer">Πίσω στο Portfolio</a></li>
+    </ul>  
+  </nav>
+  
+  <div class="star-container">
+    <div class="star"></div><div class="star"></div><div class="star"></div>
+    <div class="star"></div><div class="star"></div><div class="star"></div>
+  </div>
+  
   <div class="main-layout">
-    <!-- Αριστερή Στήλη -->
     <div class="container left-column">
       <h1>Python Playground</h1>
-      <p>Καλώς ήρθατε στο Python Playground! 🚀<br>
-        Εδώ μπορείτε να εξερευνήσετε τον κόσμο της Python, να μάθετε νέες τεχνικές και να αναπτύξετε τις δεξιότητές σας στον προγραμματισμό.
-        Επιλέξτε τη βαθμίδα σας από το μενού παραπάνω και ξεκινήστε το ταξίδι σας στην Python! 🐍</p>
+      <p>Καλώς ήρθατε στο Python Playground! 🚀</p>
     </div>
-
-    <!-- Δεξιά Στήλη -->
     <div class="container right-column">
       <h2><u>Χρήσιμοι Σύνδεσμοι</u></h2>
       <ul>
-        <li><a href="https://python.org" target="_blank" rel="noopener noreferrer">Επίσημη Ιστοσελίδα Python</a></li>
+        <li><a href="https://python.org" target="_blank" rel="noopener noreferrer">Python</a></li>
         <li><a href="https://www.w3schools.com" target="_blank" rel="noopener noreferrer">W3Schools</a></li>
         <li><a href="https://stackoverflow.com" target="_blank" rel="noopener noreferrer">Stack Overflow</a></li>
       </ul>
-
-      <h2><u>Πρόσθετο Υλικό</u></h2>
-      <p>Μπορείτε να βρείτε περισσότερα εργαλεία και παραδείγματα στον ακόλουθο σύνδεσμο:</p>
-      <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
     </div>
   </div>
-
-  <script src="scripts/main.js"></script>
 </body>
 </html>

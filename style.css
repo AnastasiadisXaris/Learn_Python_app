@@ -1,43 +1,81 @@
-/* Κεντρικό Layout */
+/* Βασικές Ρυθμίσεις */
+body {
+    font-family: 'Arial', serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(135deg, #2196F3, #21CBF3);
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #121212;
+    position: relative;
+}
+
+.navbar {
+    background-color: #222;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a, .nav-button {
+    color: white;
+    background: none;
+    border: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover, .nav-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
 .main-layout {
-    display: grid;
-    grid-template-columns: 2fr 1fr; /* 2 μέρη για την αριστερή στήλη, 1 για τη δεξιά */
-    gap: 20px; /* Απόσταση μεταξύ στηλών */
-    width: 90%; /* Μικρή μείωση του πλάτους για να φαίνεται καλύτερα */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+    width: 90%;
     max-width: 1200px;
-    margin: 0 auto; /* Κεντράρισμα */
+    padding: 20px;
 }
 
-/* Αριστερή Στήλη */
-.left-column {
+.container {
     background: rgba(255, 255, 255, 0.9);
-    padding: 40px 30px;
-    border-radius: 20px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-    text-align: center;
-}
-
-/* Δεξιά Στήλη */
-.right-column {
-    background: rgba(255, 255, 255, 0.95);
-    padding: 30px 20px;
-    border-radius: 20px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-    color: #333;
-}
-
-.right-column h2 {
-    color: #555;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     margin-bottom: 20px;
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
 }
 
 .right-column ul {
     list-style: none;
     padding: 0;
-}
-
-.right-column ul li {
-    margin-bottom: 15px;
 }
 
 .right-column ul li a {
@@ -50,468 +88,135 @@
     text-decoration: underline;
 }
 
-/* Responsive Σχεδίαση */
 @media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+    
     .main-layout {
-        grid-template-columns: 1fr; /* Εμφάνιση των στηλών τη μία κάτω από την άλλη */
+        width: 95%;
     }
-    .left-column, .right-column {
-        padding: 20px;
+    
+    .container {
+        padding: 15px;
     }
-}
-
-/* Γενικές Ρυθμίσεις */
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: linear-gradient(135deg, #2196F3, #21CBF3);
-    overflow: hidden; /* Κρύβει οτιδήποτε ξεφεύγει από τα όρια */
-    position: relative; /* Απαραίτητο για τα αστέρια */
-}
-
-/* Κεντρικό Πλαίσιο */
-.container {
-    text-align: center;
-    background: rgba(255, 255, 255, 0.9);
-    padding: 40px 60px;
-    border-radius: 20px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-    color: #333333;
-    z-index: 1; /* Διασφαλίζει ότι το πλαίσιο είναι πάνω από τα αστέρια */
-}
-
-.star {
-    position: absolute;
-    background-image: url('photos/python.png'); /* Χρησιμοποίησε τη διαδρομή της εικόνας σου */
-    background-size: cover;
-    width: 30px; /* Προσαρμόζεις το μέγεθος */
-    height: 30px;
-    animation: float 6s ease-in-out infinite;
-    z-index: 10;
-}
-
-/* Ρυθμίσεις για κάθε αστέρι */
-.star:nth-child(1) {
-    width: 25px;
-    height: 25px;
-    top: 10%;
-    left: 20%;
-    animation-duration: 6s;
-}
-
-.star:nth-child(2) {
-    width: 20px;
-    height: 20px;
-    top: 30%;
-    right: 40%;
-    animation-duration: 8s;
-}
-
-.star:nth-child(3) {
-    width: 30px;
-    height: 30px;
-    top: 70%;
-    right: 15%;
-    animation-duration: 15s;
-}
-
-/* Νέα αστέρια στα δεξιά */
-.star:nth-child(4) {
-    width: 35px;
-    height: 35px;
-    top: 70%;
-    left: 10%; /* Πιο δεξιά */
-    animation-duration: 7s;
-}
-
-.star:nth-child(5) {
-    width: 30px;
-    height: 30px;
-    top: 40%;
-    left: 90%;
-    animation-duration: 9s;
-}
-
-.star:nth-child(6) {
-    width: 40px;
-    height: 40px;
-    top: 90%;
-    left: 40%;
-    animation-duration: 6s;
-}
-
-.star:nth-child(7) {
-    width: 25px;
-    height: 25px;
-    top: 10%;
-    left: 80%;
-    animation-duration: 8s;
-}
-
-.star:nth-child(8) {
-    width: 50px;
-    height: 50px;
-    top: 80%;
-    left: 70%;
-    animation-duration: 10s;
-}
-
-/* Animation για την κίνηση */
-@keyframes float {
-    0% {
-    transform: translateY(0);
-    }
-    50% {
-    transform: translateY(-15px);
-    }
-    100% {
-    transform: translateY(0);
-}
-}
-
-/* Επικεφαλίδες */
-h1 {
-    font-size: 3rem;
-    margin-bottom: 15px;
-    color: #333;
-}
-
-h2 {
-    font-size: 1.5rem;
-    margin-bottom: 30px;
-    color: #555;
-}
-
-/* Πλαίσιο εικόνων */
-.images-container {
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    margin-bottom: 40px;
-}
-
-.grade-item {
-    text-align: center;
-}
-
-.grade-icon {
-    width: 110px;
-    height: 110px;
-    object-fit: contain;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.grade-icon:hover {
-    transform: scale(1.1);
-    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
-}
-
-/* Πλαίσιο κουμπιών */
-.grade-selection {
-    display: flex;
-    justify-content: center;
-    gap: 25px;
 }
 
 .module-icon {
-    width: 110px;
-    height: 110px;
-    object-fit: contain;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 80px; /* Μειωμένο μέγεθος εικόνων */
+    height: auto;
+    max-width: 100%;
 }
-
-.module-icon:hover {
-    transform: scale(1.1);
-    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
-}
-
-/* Πλαίσιο κουμπιών */
-.module-selection {
+.images-container {
     display: flex;
     justify-content: center;
-    gap: 25px;
+    gap: 20px;
+    flex-wrap: wrap;
 }
-
-/* Κουμπιά */
-button {
-    width: 200px; /* Σταθερό πλάτος */
-    height: 50px; /* Σταθερό ύψος */
-    padding: 0;
-    font-size: 1.1rem;
-    text-align: center;
-    line-height: 50px; /* Κεντράρισμα κειμένου κάθετα */
-    border: none;
-    background: linear-gradient(135deg, #4CAF50, #2196F3);
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-button:hover {
-    background-color: #4CAF50;
-    transform: scale(1.1);
-}
-
-button:active {
-    transform: scale(1.05);
-}
-
 .back-button-container {
-    position: absolute; /* Σταθερό σημείο στη σελίδα */
+    position: fixed;
     top: 20px;
     left: 20px;
-    z-index: 2000; /* Πάνω από το περιεχόμενο */
+    z-index: 1000;
 }
-
 .back-arrow-box {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100px; /* Μέγεθος πλαισίου */
-    height: 70px;
-    background: linear-gradient(135deg, #4CAF50, #2196F3); /* Χρώματα πλαισίου */
-    border-radius: 15px; /* Καμπύλες γωνίες */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Σκιά */
-    transition: transform 0.2s ease, box-shadow 0.3s ease;
-    cursor: pointer; /* Δείκτης χεριού */
+    width: 50px;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
 }
-
-.back-arrow-box:hover {
-    transform: scale(1.1); /* Ελαφρώς μεγαλύτερο στο hover */
-    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3); /* Εντυπωσιακή σκιά */
-}
-
-.back-arrow-box:active {
-    transform: scale(1.05); /* Μικρότερο κατά το click */
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Μείωση σκιάς */
-}
-
 .back-arrow {
-    width: 40px; /* Μέγεθος εικόνας */
+    width: 30px;
     height: auto;
 }
 
-@media (max-width: 768px) {
-    /* Ρυθμίσεις για τα κουμπιά */
-    button {
-        width: 80%; /* Το πλάτος είναι σχετικό με το container */
-        max-width: 200px; /* Μέγιστο πλάτος για αποφυγή υπερβολών */
-        height: auto; /* Αυτόματη προσαρμογή ύψους */
-        padding: 15px 15px; /* Εξασφάλιση καλής αναλογίας */
-        font-size: 0.9rem; /* Ελαφρώς μικρότερο κείμενο */
-        line-height: normal; /* Αυτόματη διαχείριση */
-    }
-
-    /* Ρυθμίσεις για το main layout */
-    .main-layout {
-        padding: 10px; /* Αποφυγή κόλλησης στα άκρα */
-    }
-
-    /* Ρυθμίσεις για τα containers */
-    .left-column, .right-column {
-        padding: 15px; /* Εσωτερικά περιθώρια */
-        margin: 10px 0; /* Εξωτερικά περιθώρια για απόσταση από τις άκρες */
-    }
-
-    /* Ρύθμιση για εικόνες */
-    .grade-icon {
-        max-width: 80%; /* Περιορισμός μεγέθους */
-        height: auto; /* Προσαρμογή ύψους */
-    }
-
-    /* Ρύθμιση για το σώμα (προαιρετικά αν υπάρχει γενικό πρόβλημα) */
-    body {
-        padding: 10px; /* Αποφυγή κόλλησης περιεχομένου */
-    }
-}
-
-/* Back Button Positioning */
-.back-button-container {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    z-index: 100; /* Για να είναι πάνω από τα υπόλοιπα στοιχεία */
-}
-
-.left-column {
-    position: relative; /* Απαραίτητο για το absolute positioning */
-}
-
-  /* Προσαρμογή για κινητά */
-@media (max-width: 768px) {
-    .back-button-container {
-        top: 5px;
-        left: 5px;
-    }
-    
-    .back-button-container button {
-        padding: 8px 15px;
-        font-size: 0.9rem;
-    }
-}
-
-  /* Προσθήκη στον υπάρχοντα κώδικα */
-body {
-    overflow-x: hidden; /* ΚΡΙΣΙΜΟ */
-}
-
-.main-layout {
-    width: 100%;
-    box-sizing: border-box; /* Περιλαμβάνει padding στο πλάτος */
-}
-
-@media (max-width: 768px) {
-    .grade-selection {
-      grid-template-columns: 1fr !important; /* 1 κουμπί ανά σειρά */
-    }
-
-    .images-container {
-      flex-wrap: wrap; /* Αναδίπλωση εικόνων αν δεν χωράνε */
-    }
-}
-
-  /* Στυλ για το μενού */
 .navbar {
-    background-color: #333;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 10px 20px;
-}
-
-.navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-}
-
-.navbar li {
-    margin: 0 10px;
-}
-
-.navbar li a, .navbar .nav-button {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 10px 15px;
-    text-decoration: none;
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-.navbar li a:hover, .navbar .nav-button:hover {
-    background-color: #575757;
-    border-radius: 5px;
-}
-
-.navbar .right {
-    margin-left: auto;
-}
-
-  /* Προσαρμογή του main-layout ώστε να μην καλύπτεται από το fixed menu */
-.main-layout {
-    margin-top: 60px; /* Για να μην καλύπτεται από το navbar */
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-}
-
-.container {
-    padding: 20px;
-    background: #f4f4f4;
-    border-radius: 8px;
-}
-
-.left-column {
-    width: 60%;
-}
-
-.right-column {
-    width: 35%;
-}
-
-/* Στυλ για Navbar */
-.navbar {
-    background: #222;
+    background-color: #222;
     padding: 10px 20px;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
-
-.navbar ul {
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 15px;
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex;
-    width: 100%;
-    align-items: center;
 }
-
-.navbar .logo a {
-    font-size: 22px;
-    font-weight: bold;
-    color: #ffcc00;
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 150px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+.dropdown-content a {
+    color: black;
+    padding: 10px 15px;
+    display: block;
     text-decoration: none;
 }
 
-.navbar .menu {
-    margin-left: auto; /* Στοίχιση στα δεξιά */
-    display: flex;
-    gap: 15px;
+.dropdown-content a:hover {
+    background-color: #ddd;
 }
 
-.navbar li {
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.star-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -1;
+}
+.star {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    animation: twinkle 3s infinite ease-in-out;
+}
+
+@keyframes twinkle {
+    0% { opacity: 0.3; }
+    50% { opacity: 1; }
+    100% { opacity: 0.3; }
+}
+
+.button-container {
     display: flex;
+    flex-direction: column;
+    gap: 15px;
     align-items: center;
 }
 
-.navbar a, .nav-button {
-    color: white;
-    background: none;
-    border: none;
-    font-size: 16px;
-    padding: 10px 15px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.navbar a:hover, .nav-button:hover {
-    color: #ffcc00;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 5px;
-}
-
-.nav-button.highlight {
-    border: 2px solid #ffcc00;
-    padding: 8px 15px;
-    border-radius: 5px;
-}
-
-.nav-button.highlight:hover {
-    background: #ffcc00;
-    color: #222;
+.container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 600px;
 }
